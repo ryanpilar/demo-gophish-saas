@@ -6,6 +6,9 @@ import { buttonVariants } from '@/components/ui/button'
 import { ArrowRight, Check, Star } from 'lucide-react'
 import Link from 'next/link'
 
+/** -----------------------------------|| Home - Page ||-------------------------------------- **/
+
+
 export default function Home() {
   return (
     <div className='bg-slate-50 grainy-light'>
@@ -14,35 +17,31 @@ export default function Home() {
           <div className='col-span-2 px-6 lg:px-0 lg:pt-4'>
             <div className='relative mx-auto text-center lg:text-left flex flex-col items-center lg:items-start'>
               <div className='absolute w-28 left-0 -top-20 hidden lg:block'>
-                {/* i forgot this div right here in the video, it's purely visual gradient and looks nice */}
+
                 <div className='absolute inset-x-0 bottom-0 bg-gradient-to-t via-slate-50/50 from-slate-50 h-28' />
                 <img src='/snake-1.png' className='w-full' />
               </div>
+
               <h1 className='relative w-fit tracking-tight text-balance mt-16 font-bold !leading-tight text-gray-900 text-5xl md:text-6xl lg:text-7xl'>
-                Your Image on a{' '}
-                <span className='bg-green-600 px-2 text-white'>Custom</span>{' '}
-                Phone Case
+                Phishing Awareness <span className='bg-green-600 px-2 text-white'>Made Simple</span>
               </h1>
               <p className='mt-8 text-lg lg:pr-10 max-w-prose text-center lg:text-left text-balance md:text-wrap'>
-                Capture your favorite memories with your own,{' '}
-                <span className='font-semibold'>one-of-one</span> phone case.
-                CaseCobra allows you to protect your memories, not just your
-                phone case.
+                Deploy phishing campaigns to your employees and help them stay vigilant. <span className='font-semibold'>Test, train, and protect</span> your workforce from real-world threats.
               </p>
 
               <ul className='mt-8 space-y-2 text-left font-medium flex flex-col items-center sm:items-start'>
                 <div className='space-y-2'>
                   <li className='flex gap-1.5 items-center text-left'>
                     <Check className='h-5 w-5 shrink-0 text-green-600' />
-                    High-quality, durable material
-                  </li>
-                  <li className='flex gap-1.5 items-center text-left'>
-                    <Check className='h-5 w-5 shrink-0 text-green-600' />5 year
-                    print guarantee
+                    Monthly phishing campaigns
                   </li>
                   <li className='flex gap-1.5 items-center text-left'>
                     <Check className='h-5 w-5 shrink-0 text-green-600' />
-                    Modern iPhone models supported
+                    Tailored phishing themes (e.g., Microsoft, HubSpot)
+                  </li>
+                  <li className='flex gap-1.5 items-center text-left'>
+                    <Check className='h-5 w-5 shrink-0 text-green-600' />
+                    Comprehensive reporting and analytics
                   </li>
                 </div>
               </ul>
@@ -209,9 +208,10 @@ export default function Home() {
           <div className='mb-12 px-6 lg:px-8'>
             <div className='mx-auto max-w-2xl sm:text-center'>
               <h2 className='order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900'>
-                Upload your photo and get{' '}
+                Deploy your first
+                {' '}
                 <span className='relative px-2 bg-green-600 text-white'>
-                  your own case
+                  Phishing Campaign
                 </span>{' '}
                 now
               </h2>
@@ -239,19 +239,19 @@ export default function Home() {
           <ul className='mx-auto mt-12 max-w-prose sm:text-lg space-y-2 w-fit'>
             <li className='w-fit'>
               <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
-              High-quality silicone material
+              Real-time phishing simulations
             </li>
             <li className='w-fit'>
               <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
-              Scratch- and fingerprint resistant coating
+              Comprehensive reporting on employee engagement
             </li>
             <li className='w-fit'>
               <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
-              Wireless charging compatible
+              Cutting edge phishing themes, email and landing page templates
             </li>
             <li className='w-fit'>
-              <Check className='h-5 w-5 text-green-600 inline mr-1.5' />5 year
-              print warranty
+              <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
+              HubSpot, Microsoft, Google, Financial Institutions and more
             </li>
 
             <div className='flex justify-center'>
@@ -260,8 +260,8 @@ export default function Home() {
                   size: 'lg',
                   className: 'mx-auto mt-8',
                 })}
-                href='/configure/upload'>
-                Create your case now <ArrowRight className='h-4 w-4 ml-1.5' />
+                href='/configure/start'>
+                Start A Phishing Campaign <ArrowRight className='h-4 w-4 ml-1.5' />
               </Link>
             </div>
           </ul>

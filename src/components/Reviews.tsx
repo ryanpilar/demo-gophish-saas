@@ -40,6 +40,8 @@ function ReviewColumn({
   reviewClassName?: (reviewIndex: number) => string
   msPerPixel?: number
 }) {
+
+  // We useRef & useInView together to tell us when components come into the viewport
   const columnRef = useRef<HTMLDivElement | null>(null)
   const [columnHeight, setColumnHeight] = useState(0)
   const duration = `${columnHeight * msPerPixel}ms`
@@ -108,7 +110,7 @@ function Review({ imgSrc, className, ...props }: ReviewProps) {
 
 function ReviewGrid() {
   const containerRef = useRef<HTMLDivElement | null>(null)
-  const isInView = useInView(containerRef, { once: true, amount: 0.4 })
+  const isInView = useInView(containerRef, { once: true, amount: 0.4 }) // Animate only once, when the user first scrolls
   const columns = splitArray(PHONES, 3)
   const column1 = columns[0]
   const column2 = columns[1]
