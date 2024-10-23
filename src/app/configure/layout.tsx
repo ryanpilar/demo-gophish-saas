@@ -4,30 +4,23 @@ import { ReactNode } from 'react'
 
 const STEPS = [
   {
-    name: 'Step 0: Accept Terms & Setup Billing',
+    name: 'Step 1 - Setup Billing',
     description: 'Fill in your payment details.',
-    url: '/preview',
+    url: '/setup-billing',
     imgPath: '/snake-1.png',
   },
   {
-    name: 'Step 1: Configure Your Email',
-    description: 'Make sure your email system knows about us. We will be marked as spam if you do not!',
+    name: 'Step 2: Configure Your Email',
+    description: 'Make sure your email system knows about us.',
     url: '/upload',
     imgPath: '/snake-2.png',
   },
   {
-    name: 'Step 2: Create Campaign',
-    description: 'Choose campaign type and define frequency and duration',
+    name: 'Step 3: Start Phishing',
+    description: 'Add emails. Cast Your Campaign.',
     url: '/design',
     imgPath: '/snake-3.png',
-  },
-  {
-    name: 'Step 3: Start Phishing',
-    description: 'Add company emails that need phishing. Cast Your Campaign.',
-    url: '/preview',
-    imgPath: '/snake-1.png',
-  },
-
+  }
 ]
 
 const Layout = ({ children }: { children: ReactNode }) => {
